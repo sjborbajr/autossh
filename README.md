@@ -1,4 +1,4 @@
-# autossh-tunnel
+# autossh
 
 A Docker container that maintains persistent SSH tunnels (reverse and/or local) via `autossh`. Optionally runs an internal `sshd` to allow inbound admin access over the tunnel.
 
@@ -25,7 +25,7 @@ docker run -d --restart on-failure \
   -e SSH_HOST=host.contoso.org \
   -e TUNNELS="R:0.0.0.0:10022:127.0.0.1:22" \
   -v ./keys:/keys \
-  autossh-tunnel
+  autossh
 
 ---
 
