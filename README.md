@@ -131,8 +131,6 @@ Mount a host directory to `/keys`. The container writes and reads:
 | `ssh_host_*_key` | sshd host keys (if admin sshd is enabled) |
 | `autossh.log` | autossh log (if `AUTOSSH_LOGFILE` is set) |
 
-> **Important:** Add `keys/` to `.gitignore`. Never commit this directory.
-
 ---
 
 ## License
