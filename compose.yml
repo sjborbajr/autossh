@@ -1,13 +1,13 @@
 services:
   autossh:
-    build: .
+    image: sjborbajr/autossh:latest
     restart: always
     environment:
       SSH_USER: user
       SSH_HOST: host.contoso.org
       SSH_PORT: 22                      # optional, default 22
       TUNNELS: "R:0.0.0.0:10022:127.0.0.1:22|L:0.0.0.0:3389:127.0.0.1:3389"
-      SSH_VERBOSE: v                    # optional: v, vv, vvv, or 0 to silence
+      # SSH_VERBOSE: v                    # optional: v, vv, vvv, or 0 to silence
       # AUTOSSH_LOGFILE: /keys/autossh.log  # optional: persist log to file (docker logs captures stderr by default)
       # SSH_ADMIN_USER: admin           # optional: enables sshd inside the container
       # SSH_ADMIN_PUBKEY: "ssh-ed25519 AAAA..."  # required if SSH_ADMIN_USER is set
