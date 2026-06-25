@@ -1,8 +1,8 @@
 FROM ubuntu:24.04
 
-LABEL org.opencontainers.image.title="autossh-tunnel" \
-      org.opencontainers.image.description="Persistent reverse/local SSH tunnel via autossh with optional sshd admin access" \
-      org.opencontainers.image.source="https://github.com/YOURORG/autossh-tunnel" \
+LABEL org.opencontainers.image.title="autossh" \
+      org.opencontainers.image.description="Persistent ssh with reverse/local SSH tunnels via autossh; optional sshd admin access" \
+      org.opencontainers.image.source="https://github.com/sjborbajr/autossh" \
       org.opencontainers.image.licenses="MIT" \
       org.opencontainers.image.version="1.0.0"
 
